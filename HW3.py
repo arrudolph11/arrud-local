@@ -34,8 +34,7 @@ class Magic_8:
             print("None yet")
         else:
             for i in range(len(self.answer_history_list)):
-                answer_index = self.answer_history_list[i]
-                print("[" + str(answer_index) + "] " +  self.question_list[i])
+                
             
     # EXTRA POINTS
     # create the generate_n_responses method
