@@ -19,7 +19,7 @@ class Magic_8:
 
     def shake_ball(self):
         randIndex = random.randint(0, (len(self.answer_list) -1))
-        self.answer_history_list.append(randIndex)
+        self.answer_history_list.append(Index)
         return self.answer_list[randIndex]
 
     def check_question(self, question):
@@ -34,6 +34,8 @@ class Magic_8:
             print("None yet")
         else:
             for i in range(len(self.answer_history_list)):
+                answer_index = self.answer_history_list[i]
+                print("[" + str(answer_index) + "] " +  self.question_list[i])
                 
             
     # EXTRA POINTS
