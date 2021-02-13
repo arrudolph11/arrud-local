@@ -19,7 +19,7 @@ class Magic_8:
 
     def shake_ball(self):
         randIndex = random.randint(0, (len(self.answer_list) -1))
-        self.answer_history_list.append(Index)
+        self.answer_history_list.append(randIndex)
         return self.answer_list[randIndex]
 
     def check_question(self, question):
